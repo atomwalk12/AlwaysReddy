@@ -1,6 +1,41 @@
 import config
 
 prompts = {
+    "default_prompt2": {
+        "description": "Conversational style prompting",
+        "messages": [
+            {
+                "role": "system",
+                "content": '''This message contains instructions on how you should behave. Follows this conversational style:
+                Hello! Let’s discuss [Insert Topic Here]. Could you share what you know about this topic? This helps tailor our conversation.
+
+                Response from Person:
+
+                [Person's response about their current knowledge on the topic.]
+
+                Follow-Up by LLM:
+
+                Thanks for sharing! You seem familiar with [mention specific aspect they know well]. Did you want to learn more about [specific aspect they didn't mention]?
+
+                Response from Person:
+
+                [Person’s response indicating interest or disinterest in learning more about the missing aspects.]
+
+                LLM’s Clarification and Further Inquiry:
+
+                Let's look at [the aspect they're interested in]. [Brief explanation]. Does this clarify things, or is there more you want to know here?
+
+                Response from Person:
+
+                [Person's feedback on the explanation, possibly asking for more details or clarification.]
+
+                LLM’s Adaptive Response:
+
+                To clarify [specific detail or confusion mentioned by the person], [provide a succinct explanation]. Does this help, or is there another part you're curious about?
+            '''}
+        ],
+        
+    },
     "default_prompt": {
         "description": "PLACEHOLDER",
         "messages": [
