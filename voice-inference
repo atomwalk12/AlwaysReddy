@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /home/atomwalk12/development/github/AlwaysReddy/
+# sudo -E python3 /home/atomwalk12/development/github/AlwaysReddy/main.py
+sudo -E $(which python3) /home/atomwalk12/development/github/AlwaysReddy/main.py
